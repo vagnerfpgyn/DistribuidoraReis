@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="628.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CadastroClienteController">
+   <children>
+      <Label layoutX="187.0" layoutY="68.0" text="CPF/CNPJ:" textFill="WHITE" />
+      <Label layoutX="208.0" layoutY="96.0" text="Nome:" textFill="WHITE" />
+      <Label layoutX="175.0" layoutY="250.0" text="Endereço:" textFill="WHITE" />
+      <TextField fx:id="txtNome" layoutX="272.0" layoutY="91.0" prefHeight="25.0" prefWidth="241.0" promptText="Nome" text="teste" />
+      <TextField fx:id="txtRazaoSocial" layoutX="273.0" layoutY="119.0" prefHeight="25.0" prefWidth="241.0" promptText="Razão Social" text="teste" />
+      <TextField fx:id="txtInscricaoMunicipal" layoutX="273.0" layoutY="147.0" prefHeight="25.0" prefWidth="241.0" promptText="Inscrição Municipal" />
+      <TextField fx:id="txtInscricaoEstadual" layoutX="273.0" layoutY="175.0" prefHeight="25.0" prefWidth="241.0" promptText="Inscrição Estadual" />
+      <TextField fx:id="txtCpfCnpj" layoutX="273.0" layoutY="63.0" text="04521107699" />
+      <TextField fx:id="txtLimiteDeCredito" layoutX="273.0" layoutY="210.0" prefHeight="25.0" prefWidth="118.0" promptText="Limite de Crédito" />
+      <TextField fx:id="txtEndereco" layoutX="273.0" layoutY="247.0" prefHeight="25.0" prefWidth="241.0" promptText="Endereço" text="teste" />
+      <TextField fx:id="txtNumero" layoutX="273.0" layoutY="275.0" prefHeight="25.0" prefWidth="52.0" promptText="nº" text="5" />
+      <TextField fx:id="txtBairro" layoutX="328.0" layoutY="275.0" prefHeight="25.0" prefWidth="186.0" promptText="Bairro" text="teste" />
+      <TextField fx:id="txtComplemento" layoutX="273.0" layoutY="303.0" prefHeight="25.0" prefWidth="241.0" promptText="Complemento" />
+      <TextField fx:id="txtCidade" layoutX="273.0" layoutY="331.0" prefHeight="26.0" prefWidth="159.0" promptText="Cidade" text="teste" />
+      <TextField fx:id="txtCep" layoutX="273.0" layoutY="359.0" text="74705230" />
+      <Label layoutX="171.0" layoutY="397.0" text="Telefones:" textFill="WHITE" />
+      <TextField fx:id="txtTelefone1" layoutX="342.0" layoutY="396.0" promptText="Tel. 1" text="444" />
+      <TextField fx:id="txtTelefone2" layoutX="342.0" layoutY="424.0" promptText="Tel. 2" />
+      <TextField fx:id="txtTelefone3" layoutX="342.0" layoutY="452.0" promptText="Tel. 3" />
+      <Label layoutX="200.0" layoutY="494.0" text="Email:" textFill="WHITE" />
+      <TextField fx:id="txtEmail1" layoutX="273.0" layoutY="489.0" prefHeight="25.0" prefWidth="241.0" promptText="E-mail 1" text="teste@teste.com.br" />
+      <TextField fx:id="txtEmail2" layoutX="273.0" layoutY="517.0" prefHeight="25.0" prefWidth="241.0" promptText="E-mail 2" />
+      <Label layoutX="162.0" layoutY="124.0" text="Razão Social:" textFill="WHITE" />
+      <Label layoutX="117.0" layoutY="152.0" text="Inscrição Municipal:" textFill="WHITE" />
+      <Label layoutX="120.0" layoutY="180.0" text="Inscrição Estadual:" textFill="WHITE" />
+      <Label layoutX="125.0" layoutY="215.0" text="Limite de Crédito:" textFill="WHITE" />
+      <Button layoutX="9.0" layoutY="578.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="132.0" style="-fx-background-color: #E6E6E6;">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="132.0">
+               <image>
+                  <Image url="@Icons/Botões/Salvar%20e%20Novo.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnSalvar" layoutX="167.0" layoutY="578.0" mnemonicParsing="false" onAction="#salvar" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #E6E6E6;" />
+      <Button layoutX="319.0" layoutY="578.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="147.0" style="-fx-background-color: #E6E6E6;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="133.0">
+               <image>
+                  <Image url="@Icons/Botões/Cancelar.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnLimpar" layoutX="477.0" layoutY="578.0" mnemonicParsing="false" onAction="#limpaCampos" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #E6E6E6;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="126.0">
+               <image>
+                  <Image url="@Icons/Botões/Limpar.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="101.0" fitWidth="111.0" layoutX="15.0" layoutY="15.0">
+         <image>
+            <Image url="@Icons/Add-Male-User-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="180.0" layoutX="321.0" layoutY="22.0">
+         <image>
+            <Image url="@Títulos/Títulos/DE%20CLIENTES.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="180.0" layoutX="133.0" layoutY="22.0">
+         <image>
+            <Image url="@Títulos/Títulos/CADASTRO.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtId" layoutX="380.0" layoutY="63.0" prefHeight="26.0" prefWidth="64.0" />
+      <Label layoutX="261.0" layoutY="68.0" text="*" textFill="#dd0808">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="95.0" text="*" textFill="#dd0808">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="122.0" text="*" textFill="#dd0808">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="250.0" text="*" textFill="#dd0808">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="276.0" text="*" textFill="#dd0808">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="331.0" text="*" textFill="#dd0808">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="360.0" text="*" textFill="#dd0808">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="397.0" text="*" textFill="#dd0808">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="490.0" text="*" textFill="#dd0808">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDdd1" layoutX="273.0" layoutY="396.0" prefHeight="26.0" prefWidth="52.0" text="00" />
+      <TextField fx:id="txtDdd2" layoutX="273.0" layoutY="424.0" prefHeight="26.0" prefWidth="52.0" text="00" />
+      <TextField fx:id="txtDdd3" layoutX="273.0" layoutY="452.0" prefHeight="26.0" prefWidth="52.0" text="00" />
+      <ImageView fitHeight="29.0" fitWidth="114.0" layoutX="160.0" layoutY="542.0">
+         <image>
+            <Image url="@Icons/Botões/Salvar.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cb_UF" layoutX="439.0" layoutY="333.0" prefHeight="26.0" prefWidth="76.0" />
+   </children>
+</Pane>

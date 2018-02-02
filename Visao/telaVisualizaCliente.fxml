@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="884.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VisualizaClienteController">
+   <children>
+      <Label layoutX="154.0" layoutY="140.0" text="Nome:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="131.0" layoutY="116.0" text="CPF/CNPJ:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="129.0" layoutY="280.0" text="Endereço:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="127.0" layoutY="420.0" text="Telefones:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="140.0" layoutY="530.0" text="E-mail's:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="551.0" layoutY="294.0" text="Data de Cadastro:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lblDtCadastro" layoutX="695.0" layoutY="294.0" text="LabelDataCadastro">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="btnEditar" layoutX="657.0" layoutY="546.0" mnemonicParsing="false" onAction="#salvarEdicao" onMouseClicked="#editarCliente" prefHeight="33.0" prefWidth="114.0" style="-fx-background-color: #E6E6E6;" textFill="#290ce1" />
+      <Button layoutX="556.0" layoutY="545.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="28.0" style="-fx-background-color: #E6E6E6;" textFill="#116801">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="76.0">
+               <image>
+                  <Image url="@Icons/Botões/Ok.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Separator layoutX="484.0" layoutY="161.0" orientation="VERTICAL" prefHeight="327.0" prefWidth="0.0" style="-fx-background-color: white;" />
+      <Label layoutX="569.0" layoutY="150.0" text="Maior Compra:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="565.0" layoutY="179.0" text="Menor Compra:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="576.0" layoutY="208.0" text="Ticket Médio:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="551.0" layoutY="263.0" text="Limite de Crédito:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="617.0" layoutY="236.0" text="Status:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="695.0" layoutY="150.0" text="LabelMaiorCompra">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="695.0" layoutY="179.0" text="LabelMenorCompra">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="695.0" layoutY="208.0" text="LabelTicket">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="695.0" layoutY="236.0" text="LabelStatus">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="695.0" layoutY="263.0" text="LabelLimiteDeCredito">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="68.0" layoutY="200.0" text="Inscrição Estadual:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="62.0" layoutY="230.0" text="Inscrição Municipal:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="107.0" layoutY="170.0" text="Razão Social:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="134.0" fitWidth="119.0" layoutX="10.0" layoutY="-8.0">
+         <image>
+            <Image url="@Títulos/Clientes%20Visualização.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="200.0" layoutX="474.0" layoutY="47.0">
+         <image>
+            <Image url="@Títulos/Títulos/DE%20CLIENTES.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="232.0" layoutX="237.0" layoutY="41.0">
+         <image>
+            <Image url="@Títulos/Títulos/VIZUALIZAÇÂO.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtNome" editable="false" layoutX="220.0" layoutY="140.0" prefHeight="26.0" prefWidth="256.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtRazaoSocial" editable="false" layoutX="220.0" layoutY="170.0" prefHeight="26.0" prefWidth="256.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtIEstadual" editable="false" layoutX="220.0" layoutY="200.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtIMunicipal" editable="false" layoutX="220.0" layoutY="230.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtEndereco" editable="false" layoutX="220.0" layoutY="280.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtNumero" editable="false" layoutX="396.0" layoutY="280.0" prefHeight="26.0" prefWidth="71.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtComplemento" editable="false" layoutX="221.0" layoutY="310.0" prefHeight="26.0" prefWidth="125.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtCidade" editable="false" layoutX="220.0" layoutY="340.0" prefHeight="26.0" prefWidth="177.0" style="-fx-background-color: gray;" />
+      <ComboBox fx:id="cbEstado" layoutX="401.0" layoutY="340.0" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtCEP" editable="false" layoutX="220.0" layoutY="370.0" prefHeight="26.0" prefWidth="177.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtDDD1" editable="false" layoutX="220.0" layoutY="420.0" prefHeight="26.0" prefWidth="36.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtTel1" editable="false" layoutX="268.0" layoutY="420.0" prefHeight="26.0" prefWidth="125.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtDDD2" editable="false" layoutX="220.0" layoutY="450.0" prefHeight="26.0" prefWidth="36.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtTel2" editable="false" layoutX="268.0" layoutY="450.0" prefHeight="26.0" prefWidth="125.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtDDD3" editable="false" layoutX="220.0" layoutY="480.0" prefHeight="26.0" prefWidth="36.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtTel3" editable="false" layoutX="268.0" layoutY="480.0" prefHeight="26.0" prefWidth="125.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtEmail1" editable="false" layoutX="220.0" layoutY="530.0" prefHeight="26.0" prefWidth="256.0" style="-fx-background-color: gray;" />
+      <TextField fx:id="txtEmail2" editable="false" layoutX="220.0" layoutY="560.0" prefHeight="26.0" prefWidth="256.0" style="-fx-background-color: gray;" />
+      <Label fx:id="lblCpfCnpj" layoutX="220.0" layoutY="118.0" text="CPF / CNPJ" />
+      <TextField fx:id="txtID" editable="false" layoutX="529.0" layoutY="77.0" opacity="0.0" />
+      <TextField fx:id="txtBairro" editable="false" layoutX="348.0" layoutY="310.0" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: gray;" />
+      <ImageView fitHeight="28.0" fitWidth="110.0" layoutX="644.0" layoutY="498.0">
+         <image>
+            <Image url="@Icons/Botões/Editar.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

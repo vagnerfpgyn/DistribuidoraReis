@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="628.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="LogoCadastroProdutos" fitHeight="102.0" fitWidth="159.0" layoutX="5.0" layoutY="1.0">
+         <image>
+            <Image url="@../../../../Telas/Títulos/Cadastro%20de%20Produtos.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="LblNome" layoutX="256.0" layoutY="97.0" text="Nome:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblQuantidadeMinima" layoutX="174.0" layoutY="209.0" text="Quantidade mínima:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblTamanho" layoutX="238.0" layoutY="125.0" text="Tamanho:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblModelo" layoutX="248.0" layoutY="153.0" text="Modelo:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblFornecedor" layoutX="226.0" layoutY="181.0" text="Fornecedor:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblCusto" layoutX="260.0" layoutY="237.0" text="Custo:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblDataDeCadastro" layoutX="191.0" layoutY="265.0" text="Data de cadastro:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnLimpar" layoutX="477.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #E6E6E6;">
+         <graphic>
+            <ImageView fx:id="imgBtnLimpar" fitHeight="32.0" fitWidth="126.0">
+               <image>
+                  <Image url="@Icons/Botões/Limpar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="BtnCancelar" layoutX="319.0" layoutY="350.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="147.0" style="-fx-background-color: #E6E6E6;">
+         <graphic>
+            <ImageView fx:id="imgBtnCancelar" fitHeight="31.0" fitWidth="133.0">
+               <image>
+                  <Image url="@Icons/Botões/Cancelar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="BtnSalvar" layoutX="167.0" layoutY="350.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #E6E6E6;">
+         <graphic>
+            <ImageView fx:id="imgBtnSalvar" fitHeight="29.0" fitWidth="114.0">
+               <image>
+                  <Image url="@Icons/Botões/Salvar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="BtnSalvarENovo" layoutX="9.0" layoutY="350.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="132.0" style="-fx-background-color: #E6E6E6;">
+         <graphic>
+            <ImageView fx:id="imgBtnSalvarENovo" fitHeight="26.0" fitWidth="132.0">
+               <image>
+                  <Image url="@Icons/Botões/Salvar%20e%20Novo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="TxtNome" layoutX="309.0" layoutY="95.0" prefHeight="25.0" prefWidth="245.0" promptText="Nome" />
+      <TextField fx:id="TxtTamanho" layoutX="309.0" layoutY="123.0" promptText="Tamanho" />
+      <TextField fx:id="TxtModelo" layoutX="309.0" layoutY="151.0" promptText="Modelo" />
+      <TextField fx:id="TxtQuantidadeMinima" layoutX="309.0" layoutY="207.0" prefHeight="25.0" prefWidth="125.0" promptText="Quantidade Mínima" />
+      <TextField fx:id="TxtCusto" layoutX="309.0" layoutY="235.0" prefHeight="25.0" prefWidth="125.0" promptText="Custo" />
+      <TextField fx:id="TxtDataDeCadastro" editable="false" layoutX="309.0" layoutY="263.0" prefHeight="25.0" prefWidth="98.0" promptText="Data de Cadastro" text="DD/MM/AAAA" />
+      <ImageView fx:id="imgDeProdutos" fitHeight="25.0" fitWidth="245.0" layoutX="351.0" layoutY="23.0">
+         <image>
+            <Image url="@Títulos/Títulos/DE%20PRODUTOS.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCadastro" fitHeight="25.0" fitWidth="170.0" layoutX="175.0" layoutY="24.0">
+         <image>
+            <Image url="@Títulos/Títulos/CADASTRO.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="cbFornecedor" layoutX="308.0" layoutY="177.0" prefHeight="26.0" prefWidth="237.0" promptText="Selecione o Fornecedor" />
+   </children>
+</Pane>

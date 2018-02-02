@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="628.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="LogoFornecedores" fitHeight="102.0" fitWidth="111.0" layoutX="10.0" layoutY="10.0">
+         <image>
+            <Image url="@../../../../Telas/Títulos/Fornecedores%20Cadastro.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgDeFornecedores" fitHeight="15.0" fitWidth="200.0" layoutX="338.0" layoutY="26.0">
+         <image>
+            <Image url="@Títulos/Títulos/DE%20FORNECEDORES.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCadastro" fitHeight="17.0" fitWidth="142.0" layoutX="188.0" layoutY="25.0">
+         <image>
+            <Image url="@Títulos/Títulos/CADASTRO.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="LblLimeiteDeCredito" layoutX="176.0" layoutY="225.0" text="Limite de Crédito:" textFill="WHITE" />
+      <Label fx:id="LblInscricaoEstudal" layoutX="174.0" layoutY="169.0" text="Inscrição Estadual:" textFill="WHITE" />
+      <Label fx:id="LblInscricaoMunicipal" layoutX="166.0" layoutY="141.0" text="Inscrição Municipal:" textFill="WHITE" />
+      <Label fx:id="LblRazaoSocial" layoutX="201.0" layoutY="113.0" text="Razão Social:" textFill="WHITE" />
+      <TextField fx:id="TxtEmail2" layoutX="283.0" layoutY="527.0" prefHeight="25.0" prefWidth="241.0" promptText="E-mail 2" />
+      <TextField fx:id="TxtEmail1" layoutX="283.0" layoutY="499.0" prefHeight="25.0" prefWidth="241.0" promptText="E-mail 1" />
+      <Label fx:id="LblEmail" layoutX="237.0" layoutY="504.0" text="Email:" textFill="WHITE" />
+      <TextField fx:id="TxtTelefone3" layoutX="283.0" layoutY="462.0" promptText="Tel. 3" />
+      <TextField fx:id="TxtTelefone2" layoutX="283.0" layoutY="434.0" promptText="Tel. 2" />
+      <TextField fx:id="TxtTelefone1" layoutX="283.0" layoutY="406.0" promptText="Tel. 1" />
+      <Label fx:id="LblTelefones" layoutX="215.0" layoutY="407.0" text="Telefones:" textFill="WHITE" />
+      <TextField fx:id="TxtCep" layoutX="283.0" layoutY="369.0" promptText="CEP" />
+      <TextField fx:id="TxtUf" layoutX="465.0" layoutY="341.0" prefHeight="25.0" prefWidth="59.0" promptText="UF" />
+      <TextField fx:id="TxtCidade" layoutX="283.0" layoutY="341.0" prefHeight="25.0" prefWidth="180.0" promptText="Cidade" />
+      <TextField fx:id="TxtComplemento" layoutX="283.0" layoutY="313.0" prefHeight="25.0" prefWidth="241.0" promptText="Complemento" />
+      <TextField fx:id="TxtBairro" layoutX="338.0" layoutY="285.0" prefHeight="25.0" prefWidth="186.0" promptText="Bairro" />
+      <TextField fx:id="TxtNumero" layoutX="283.0" layoutY="285.0" prefHeight="25.0" prefWidth="52.0" promptText="nº" />
+      <TextField fx:id="TxtEndereco" layoutX="283.0" layoutY="257.0" prefHeight="25.0" prefWidth="241.0" promptText="Endereço" />
+      <TextField fx:id="TxtLimiteDeCredito" layoutX="283.0" layoutY="220.0" prefHeight="25.0" prefWidth="118.0" promptText="Limite de Crédito" />
+      <TextField fx:id="TxtCpfCnpj" layoutX="283.0" layoutY="192.0" promptText="CPF/CNPJ" />
+      <TextField fx:id="TxtInscricaoEstadual" layoutX="283.0" layoutY="164.0" prefHeight="25.0" prefWidth="241.0" promptText="Inscrição Estadual" />
+      <TextField fx:id="TxtInscricaoMunicipal" layoutX="283.0" layoutY="136.0" prefHeight="25.0" prefWidth="241.0" promptText="Inscrição Municipal" />
+      <TextField fx:id="TxtRazaoSocial" layoutX="283.0" layoutY="108.0" prefHeight="25.0" prefWidth="241.0" promptText="Razão Social" />
+      <TextField fx:id="TxtNome" layoutX="282.0" layoutY="80.0" prefHeight="25.0" prefWidth="241.0" promptText="Nome" />
+      <Label fx:id="LblEndereco" layoutX="218.0" layoutY="260.0" text="Endereço:" textFill="WHITE" />
+      <Label fx:id="LblCpfCnpj" layoutX="215.0" layoutY="197.0" text="CPF/CNPJ:" textFill="WHITE" />
+      <Label fx:id="LblNome" layoutX="234.0" layoutY="85.0" text="Nome:" textFill="WHITE" />
+      <Button fx:id="BtnLimpar" layoutX="477.0" layoutY="580.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #E6E6E6;">
+         <graphic>
+            <ImageView fx:id="imgBtnLimpar" fitHeight="32.0" fitWidth="126.0">
+               <image>
+                  <Image url="@Icons/Botões/Limpar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="BtnCancelar" layoutX="319.0" layoutY="580.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="147.0" style="-fx-background-color: #E6E6E6;">
+         <graphic>
+            <ImageView fx:id="imgBtnSalvar" fitHeight="31.0" fitWidth="133.0">
+               <image>
+                  <Image url="@Icons/Botões/Cancelar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="BtnSalvar" layoutX="167.0" layoutY="580.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #E6E6E6;">
+         <graphic>
+            <ImageView fx:id="imgBtnSalvar" fitHeight="29.0" fitWidth="114.0">
+               <image>
+                  <Image url="@Icons/Botões/Salvar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="BtnSalvarENovo" layoutX="9.0" layoutY="580.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="132.0" style="-fx-background-color: #E6E6E6;">
+         <graphic>
+            <ImageView fx:id="imgBtnSalvarENovo" fitHeight="26.0" fitWidth="132.0">
+               <image>
+                  <Image url="@Icons/Botões/Salvar%20e%20Novo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>
